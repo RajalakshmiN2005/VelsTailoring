@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery - Vels Tailoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 30%;
+      max-width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Gallery</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h2 style="text-align:center">Our Portfolio</h2>
+    <p style="text-align:center">A showcase of our custom tailoring, elegant designs, and happy customers.</p>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80" alt="Tailored Suit" />
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80" alt="Woman in dress" /><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80" alt="Tailor stitching cloth" />
+
+      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=400&q=80" alt="Measuring tape and tools" />
+      <img src="https://images.unsplash.com/photo-1589561084283-930aa7b1ce50?auto=format&fit=crop&w=400&q=80" alt="Tailor sewing with machine" />
+      <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?auto=format&fit=crop&w=400&q=80" alt="Colorful fabrics stacked" />
+    </div>
+  </main>
+
+  <footer>&copy; 2025 Vels Tailoring</footer>
+</body>
+</html>

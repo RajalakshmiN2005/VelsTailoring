@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Vels Tailoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #c62828;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .section .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section.left-image img {
+      order: 0;
+    }
+
+    .section.left-image .text {
+      order: 1;
+    }
+
+    .section.right-image img {
+      order: 1;
+    }
+
+    .section.right-image .text {
+      order: 0;
+    }
+
+    footer {
+      background-color: #c62828;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .section img,
+      .section .text {
+        order: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+
+    <div class="section left-image">
+      <img src="https://www.pagalguy.com/wp-content/uploads/2018/10/15FE49F622F7CA12.jpg" alt="Tailor Measuring" />
+      <div class="text">
+        <h2>Our Story</h2>
+        <p>Vels Tailoring was founded in 1990 with a passion for precision and personal style. What started as a small boutique has grown into a trusted name in bespoke tailoring across the region.</p>
+      </div>
+    </div>
+
+    <div class="section right-image">
+      <img src="https://michaeltailors.com/wp-content/uploads/2023/01/Invest-In-Quality-Craftsmanship-At-A-Tailor-Shop-In-Bangkok-1024x576.jpg" alt="Sewing Machine" />
+      <div class="text">
+        <h2>Craftsmanship You Can Trust</h2>
+        <p>Our master tailors bring decades of experience, combining traditional hand-sewing with modern designs to deliver garments that fit perfectly and last longer.</p>
+      </div>
+    </div>
+
+    <div class="section left-image">
+      <img src="https://i.ytimg.com/vi/J0CrN2Cn1FQ/maxresdefault.jpg" alt="Fabrics" />
+      <div class="text">
+        <h2>Fabrics & Finishes</h2>
+        <p>We offer a wide range of high-quality fabrics, linings, and finishes to meet your styling needs—from elegant silks to breathable cottons and premium wools.</p>
+      </div>
+    </div>
+
+    <div class="section right-image">
+      <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=800&q=80" alt="Fashion Designer" />
+      <div class="text">
+        <h2>Customer First</h2>
+        <p>Your satisfaction is our top priority. From first measurement to final fitting, we ensure you walk out confident in style and comfort.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Vels Tailoring | Excellence in Every Stitch
+  </footer>
+
+</body>
+</html>
