@@ -1,0 +1,2 @@
+# VelsTailoring
+static website
